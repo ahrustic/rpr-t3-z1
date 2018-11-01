@@ -18,6 +18,6 @@ public class MedunarodniBroj extends TelefonskiBroj{
 
     @Override
     public int hashCode() {
-        return 0;
+        return this.ispisi().hashCode();
     }
 }
