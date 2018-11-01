@@ -14,12 +14,26 @@ public class Program {
 		FiksniBroj fiksniBroj = new FiksniBroj(FiksniBroj.Grad.valueOf(redniBrojGrada), s);
 		return fiksniBroj;
 	}
-	
+
+	public MobilniBroj unesiMobilniBroj() {
+		Scanner ulaz = new Scanner(System.in);
+		String s = ulaz.nextLine();
+		int mobilnaMreza = ulaz.nextInt();
+		MobilniBroj mobilniBroj = new MobilniBroj(mobilnaMreza, s);
+		return mobilniBroj;
+	}
+
+	public MedunarodniBroj unesiMedunarodniBroj() {
+		Scanner ulaz = new Scanner(System.in);
+		String s = ulaz.nextLine();
+		String drzava = ulaz.nextLine();
+		MedunarodniBroj medunarodniBroj = new MedunarodniBroj(drzava, s);
+		return medunarodniBroj;
+	}
 
     public static void main(String[] args) {
 
 
-	    Map<String, TelefonskiBroj> mapa;
 
 
 
