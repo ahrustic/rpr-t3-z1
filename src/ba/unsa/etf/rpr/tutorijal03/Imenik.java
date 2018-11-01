@@ -49,7 +49,8 @@ public class Imenik {
         Set<TelefonskiBroj> brojeviIzGrada = new TreeSet<TelefonskiBroj>();
         for (Map.Entry<String, TelefonskiBroj> el:mapa.entrySet()) {
             TelefonskiBroj broj = el.getValue();
-
+            if (broj.telBroj.charAt(0) == g.vratiPozivni().charAt(0) && broj.telBroj.charAt(1) == g.vratiPozivni().charAt(1) && broj.telBroj.charAt(2) == g.vratiPozivni().charAt(2))
+                brojeviIzGrada.add(brojVlasnika);
         }
         return brojeviIzGrada;
     }
