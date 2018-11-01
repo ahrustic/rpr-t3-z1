@@ -1,5 +1,7 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
+import java.util.Objects;
+
 public class FiksniBroj extends TelefonskiBroj{
 
     private String telBroj;
@@ -25,11 +27,13 @@ public class FiksniBroj extends TelefonskiBroj{
         String ispis = new String();
         String pozivni = "0" + grad.vratiPozivni();
         ispis = ispis + pozivni + "/" + telBroj;
+        //String.format("%d %S / %S - %S");
         return ispis;
     }
 
     @Override
     public int hashCode() {
-        return 0;
+       return this.ispisi().hashCode();
     }
+
 }
