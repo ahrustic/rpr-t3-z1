@@ -1,5 +1,7 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
+import java.util.Map;
+
 public class Program {
 
     public static void main(String[] args) {
@@ -25,5 +27,11 @@ public class Program {
 				"ispravno imenovanje paketa, klasa, metoda i promjenljivih,\n" +
 				"primjenu komentara,\n" +
 				"atomic commits.\n");
+
+		Map<String, TelefonskiBroj> mapa;
+
+		
+
+
     }
 }
