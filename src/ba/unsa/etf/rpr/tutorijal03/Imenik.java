@@ -2,6 +2,7 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 import ba.unsa.etf.rpr.tutorijal03.FiksniBroj.Grad;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -9,13 +10,13 @@ import java.util.TreeSet;
 public class Imenik {
     private String imeVlasnika;
     TelefonskiBroj brojVlasnika;
-    private Map<String,  TelefonskiBroj> mapa;
+    private HashMap<String,  TelefonskiBroj> mapa = new HashMap<>();
     public void dodaj(String ime, TelefonskiBroj broj) {
         mapa.putIfAbsent(ime, broj);
     }
 
     String dajBroj(String ime) {
-        return brojVlasnika.ispisi();
+        return  mapa.get(ime).ispisi();
     }
 
     String dajIme (TelefonskiBroj broj) {
