@@ -10,7 +10,7 @@ public class MedunarodniBroj extends TelefonskiBroj{
     }
     @Override
     public String ispisi() {
-        String ispis = new String();
+        String ispis = null;
         String pozivni = drzava;
         ispis = ispis + pozivni + "/" + broj;
         return ispis;
